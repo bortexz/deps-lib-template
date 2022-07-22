@@ -1,7 +1,6 @@
 # Deps lib template
 
-Small lib template for [deps-new](https://github.com/seancorfield/deps-new), with slight differences from the default lib template. Specifically,
-the base pom.xml is smaller and is inside a template/ folder, following the pattern of libs like [honeysql](https://github.com/seancorfield/honeysql) and [next.jdbc](https://github.com/seancorfield/next-jdbc)
+Small lib template for [deps-new](https://github.com/seancorfield/deps-new).
 
 ## Usage
 
