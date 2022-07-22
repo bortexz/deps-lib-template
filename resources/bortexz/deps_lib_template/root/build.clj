@@ -1,12 +1,13 @@
 (ns build
   (:refer-clojure :exclude [test])
   (:require [clojure.tools.build.api :as b] ; for b/git-count-revs
+            [clojure.edn :as edn]
             [org.corfield.build :as bb]))
 
-(def lib '{{group/id}}/{{artifact/id}})
-(def version "{{version}}")
-#_ ; alternatively, use MAJOR.MINOR.COMMITS:
-(def version (format "1.0.%s" (b/git-count-revs nil)))
+(def release (edn/read-string (slurp "release.edn")))
+
+(def lib (symbol (:group-id release) (:artifact-id release)))
+(def version (:version release))
 
 (defn test "Run the tests." [opts]
   (bb/run-tests opts))
@@ -28,3 +29,8 @@
   (-> opts
       (assoc :lib lib :version version)
       (bb/deploy)))
+
+(defn tag-version
+  "Creates a new git lightweight tag with the current version."
+  [_]
+  (b/git-process {:git-args ["tag" (str "v" version)]}))

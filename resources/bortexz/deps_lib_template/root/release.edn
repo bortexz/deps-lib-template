@@ -1,0 +1,3 @@
+{:group-id "{{group/id}}"
+ :artifact-id "{{artifact/id}}"
+ :version "0.1.0"}
