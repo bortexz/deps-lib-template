@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.4 - 2022-07-23
+
+### Changed
+- Initial version from 0.1.0 -> 0.0.1
+
 ## 0.0.3 - 2022-07-23
 
 ### Changed
