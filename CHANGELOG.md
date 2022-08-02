@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.5 - 2022-08-03
+### Changed
+- pom-template.xml instead of template/pom.xml
+- Release process changed from pushing a new tag, to triggering a new release.yml job.
+
 ## 0.0.4 - 2022-07-23
 
 ### Changed
