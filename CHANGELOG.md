@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.7 - 2022-08-03
+### Changed
+- release.yml create-release now prefixes version with `v`
+
 ## 0.0.6 - 2022-08-03
 ### Fixed
 - build/lib missing slash between group-id and artifact-id
