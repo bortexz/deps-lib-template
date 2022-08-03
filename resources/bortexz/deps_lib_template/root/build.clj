@@ -2,7 +2,7 @@
   (:refer-clojure :exclude [test])
   (:require [org.corfield.build :as bb]))
 
-(def lib '{{group/id}}{{artifact/id}})
+(def lib '{{group/id}}/{{artifact/id}})
 (def version "0.0.1")
 
 (defn- gha-output

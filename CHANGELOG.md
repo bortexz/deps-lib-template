@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.6 - 2022-08-03
+### Fixed
+- build/lib missing slash between group-id and artifact-id
+
 ## 0.0.5 - 2022-08-03
 ### Changed
 - pom-template.xml instead of template/pom.xml
